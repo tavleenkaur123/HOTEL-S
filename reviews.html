@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,tutorials,javascript">
+    <title>REVIEWS</title>
+    
+
+</head> 
+<link rel="stylesheet" href="reviews.css">
+
+<body>
+    <div class="head"><!--for heading-->
+        <h2>REVIEWS</h2>
+    </div>    
+    <header><!--FOR TOP NAVBAR-->
+        <nav class="navbar">
+             <ul>
+                 <li><a href="hotel.html">HOTEL</a></li>
+                 <li><a href="room.html">ROOMS</a></li>
+                 <li><a href="dining.html">DINING</a></li>
+                 <li><a href="events.html">SPECIAL EVENTS</a></li>
+                 <li><a href="reviews.html">REVIEWS</a></li>
+                 <li><a href="offers.html">OFFERS</a></li>
+             </ul>
+         </nav>
+      </header>
+     
+    <form id="myForm" action="insertion.php" method="post"><!--for connection with php-->
+        <div class="form">
+        *NAME:<input type="text" name="name"><!--for name-->
+        </div>
+        <div class="form">
+        *CONTACT:<input type="text" name="contact"><!--for contact-->
+        </div>
+        <div class="form">
+        *EMAIL:<input type="email" name="email"><!--for email-->
+        </div>
+        <div class="form"><!--for textarea-->
+        *REVIEW<textarea name="review" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form2">
+        <button>SUBMIT</button><!--for submit buttom--><!--submit button-->
+        </div>
+        <div class="lastpart">
+            <div class="lastpart1"><!--for location a nd map-->
+              
+               <h2>LOCATION</h2>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.8408627665713!2d74.82015037598609!3d34.099216973139356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18579e062d489%3A0xf5276e60766deb9!2sHotel%20Shefaf-Best%20Hotel%20in%20Kashmir!5e0!3m2!1sen!2sin!4v1713289701731!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+        <div class="lastpart4">
+            <h2>ADDRESS</h2>
+            <p>Hazratbal Road</p>
+            <p>Rainawari,Srinagar </p> 
+            <p>India, 190003</p>
+            <p>+91 183 523 1243</p>
+            <p>930 REVIEWS</p>
+          
+           </div>
+           <div class="lastpart2"><!--for contact us heading-->
+            <h2>CONTACT US</h2>
+           </div>
+            <div class="lastpart3"><!--for icons of social media-->
+            <a href="https://linkedin.com"><img src="linkedin.png" width="30" height="30"></a>
+            <a href="https://instagram.com"><img src="instagram.png" width="30" height="30"></a>
+            <a href="https://web.whatsaap.com"><img src="whatsapp.png" width="30" height="30"></a>
+            <br>
+            <a href="https://twitter.com"><img id="abc"src="twitter.png" width="30" height="30"></a>
+            <a href="https://facebook.com"><img id="cba"src="facebook.png" width="30" height="30"></a>
+            </div>
+          <script>
+            // Function to validate the form
+function validateForm(event) {
+    // Prevent the form from submitting by default
+    event.preventDefault();
+    
+    // Get the form element
+    const form = document.querySelector('#myForm');
+    
+    // Get all the input fields in the form
+    const inputs = form.querySelectorAll('input, textarea, select');
+    
+    // Initialize an array to hold any error messages
+    let errorMessages = [];
+    
+    // Loop through each input field
+    inputs.forEach(input => {
+        // Check if the input field is empty
+        if (input.value.trim() === '') {
+            // Add an error message to the array
+            errorMessages.push(`Please fill out the ${input.name} field.`);
+        }
+    });
+    
+    // If there are error messages, display them
+    if (errorMessages.length > 0) {
+        // Join error messages into a single string
+        const errorMessage = errorMessages.join('\n');
+        
+        // Display the error message (you can customize this)
+        alert(errorMessage);
+    } else {
+        // If there are no error messages, submit the form
+        form.submit();
+    }
+}
+
+// Attach the validateForm function to the form's submit event
+document.querySelector('#myForm').addEventListener('submit', validateForm);
+
+</script>            
+</body>
+</html>    
