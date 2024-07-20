@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>SUITE</title>
+      <script>
+      function up(max) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) + 1;
+    if (document.getElementById("myNumber").value >= parseInt(max)) {
+        document.getElementById("myNumber").value = max;
+    }
+}
+function down(min) {
+    document.getElementById("myNumber").value = parseInt(document.getElementById("myNumber").value) - 1;
+    if (document.getElementById("myNumber").value <= parseInt(min)) {
+        document.getElementById("myNumber").value = min;
+    }
+}
+function up2(max) {
+    document.getElementById("myNumber2").value = parseInt(document.getElementById("myNumber2").value) + 1;
+    if (document.getElementById("myNumber2").value >= parseInt(max)) {
+        document.getElementById("myNumber2").value = max;
+    }
+}
+function down2(min) {
+    document.getElementById("myNumber2").value = parseInt(document.getElementById("myNumber2").value) - 1;
+    if (document.getElementById("myNumber2").value <= parseInt(min)) {
+        document.getElementById("myNumber2").value = min;
+    }
+}
+function up3(max) {
+    document.getElementById("myNumber3").value = parseInt(document.getElementById("myNumber3").value) + 1;
+    if (document.getElementById("myNumber3").value >= parseInt(max)) {
+        document.getElementById("myNumber3").value = max;
+    }
+}
+function down3(min) {
+    document.getElementById("myNumber3").value = parseInt(document.getElementById("myNumber3").value) - 1;
+    if (document.getElementById("myNumber3").value <= parseInt(min)) {
+        document.getElementById("myNumber3").value = min;
+    }
+}
+function up4(max) {
+    document.getElementById("myNumber4").value = parseInt(document.getElementById("myNumber4").value) + 1;
+    if (document.getElementById("myNumber4").value >= parseInt(max)) {
+        document.getElementById("myNumber4").value = max;
+    }
+}
+function down4(min) {
+    document.getElementById("myNumber4").value = parseInt(document.getElementById("myNumber4").value) - 1;
+    if (document.getElementById("myNumber4").value <= parseInt(min)) {
+        document.getElementById("myNumber4").value = min;
+    }
+}
+
+
+</script>
+   
+  </head>
+  <link rel="stylesheet" href="plus.css">  
+  <body>
+    <div class="head">
+        <h2>BOOKING</h2>
+    </div>    
+    <form id="myForm" action="check8.php" method="post">
+        
+        <label>*ROOMS:</label>
+            <span id="down" style="cursor: context-menu;" onclick=" down('0')"><font size=5><b>-</b></font></span>
+            <input type="text" id="myNumber" class="form-control input-number" value="1" name="rooms" />
+        
+            <span id="up" style="cursor: context-menu;" onclick="up('10')"><font size=5><b>+</b></font></span>
+            
+            <label>*Adults:</label>
+            <span id="down2" style="cursor: context-menu;" onclick=" down2('0')"><font size=5><b>-</b></font></span>
+            <input type="text" id="myNumber2" class="form-control input-number" value="1" name="adults" />
+            <span id="up2" style="cursor: context-menu;" onclick="up2('10')"><font size=5><b>+</b></font></span>
+            
+            <label>*Kids:</label>
+            <span id="down3" style="cursor: context-menu;" onclick=" down3('0')"><font size=5><b>-</b></font></span>
+            <input type="text" id="myNumber3" class="form-control input-number" value="1" name="kids" />
+            <span id="up3" style="cursor: context-menu;" onclick="up3('10')"><font size=5><b>+</b></font></span>
+            <label>*PETS:</label>
+            <span id="down4" style="cursor: context-menu;" onclick=" down4('0')"><font size=5><b>-</b></font></span>
+            <input type="text" id="myNumber4" class="form-control input-number" value="1" name="pets" />
+            <span id="up4" style="cursor: context-menu;" onclick="up4('10')"><font size=5><b>+</b></font></span><br>
+            <div class="form" id="nm">
+            *NAME:<input type="text" name="name"><br><!--for name-->
+            </div>
+           <div class="form">
+             *CONTACT:<input type="text" name="contact"><br><!--for contact-->
+           </div>
+           <div class="form">
+            *EMAIL:<input type="email" name="email"><br><!--for email-->
+           </div>
+           <div class="form">
+            *CHECKIN DATE:<input type="date" name="checkin-date"><br><!--for dates-->
+            </div>
+            <div class="form">
+             *CHECKOUT DATE:<input type="date" name="checkout-date"><br><!--for dates-->
+             </div>
+           
+           <div class="form2">
+            <button>SUBMIT</button><!--for submit buttom-->
+           </div>
+           </form>
+           <div class="lastpart">
+            <div class="lastpart1"><!--for location a nd map-->
+              
+               <h2>LOCATION</h2>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.8408627665713!2d74.82015037598609!3d34.099216973139356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18579e062d489%3A0xf5276e60766deb9!2sHotel%20Shefaf-Best%20Hotel%20in%20Kashmir!5e0!3m2!1sen!2sin!4v1713289701731!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+           
+               
+           
+            </div>
+            
+        <div class="lastpart4">
+            <h2>ADDRESS</h2>
+     <p>Hazratbal Road</p>
+     <p>Rainawari,Srinagar </p> 
+     <p>India, 190003</p>
+     <p>+91 183 523 1243</p>
+     <p>930 REVIEWS</p>
+          
+           </div>
+           <div class="lastpart2"><!--for contact us heading-->
+            <h2>CONTACT US</h2>
+           </div>
+            <div class="lastpart3"><!--for icons of social media-->
+            <a href="https://linkedin.com"><img src="linkedin.png" width="30" height="30"></a>
+            <a href="https://instagram.com"><img src="instagram.png" width="30" height="30"></a>
+            <a href="https://web.whatsaap.com"><img src="whatsapp.png" width="30" height="30"></a>
+            <br>
+            <a href="https://twitter.com"><img id="abc"src="twitter.png" width="30" height="30"></a>
+            <a href="https://facebook.com"><img id="cba"src="facebook.png" width="30" height="30"></a>
+            </div>
+            <script>
+                // Function to validate the form
+function validateForm(event) {
+    // Prevent the form from submitting by default
+    event.preventDefault();
+    
+    // Get the form element
+    const form = document.querySelector('#myForm');
+    
+    // Get all the input fields in the form
+    const inputs = form.querySelectorAll('input, textarea, select');
+    
+    // Initialize an array to hold any error messages
+    let errorMessages = [];
+    
+    // Loop through each input field
+    inputs.forEach(input => {
+        // Check if the input field is empty
+        if (input.value.trim() === '') {
+            // Add an error message to the array
+            errorMessages.push(`Please fill out the ${input.name} field.`);
+        }
+    });
+    
+    // If there are error messages, display them
+    if (errorMessages.length > 0) {
+        // Join error messages into a single string
+        const errorMessage = errorMessages.join('\n');
+        
+        // Display the error message (you can customize this)
+        alert(errorMessage);
+    } else {
+        // If there are no error messages, submit the form
+        form.submit();
+    }
+}
+
+// Attach the validateForm function to the form's submit event
+document.querySelector('#myForm').addEventListener('submit', validateForm);
+</script>
+          
+  </body>
+</html>
