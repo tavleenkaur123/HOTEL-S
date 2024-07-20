@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,tutorials,javascript">
+    <title>Hotel </title>
+</head>
+ <style>
+  #image {
+    width: 100%;
+    height:750px;
+  }
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  .chatbot{
+      position:fixed;
+    }
+</style>
+
+<link rel="stylesheet" href="hotel.css">
+<body>
+  <!--for center part i.e headings location -->
+  <div class="chatbot">
+    <a href="bot.html"><img src="botchat.png" width="50" height="50"></a>
+  </div>
+
+  <div class="cont">
+<div class="logo"><!--for logo-->
+  <img src="logo2.png" width="145" height="145">
+</div>  
+<div class="ctrl"><!--for central part-->
+ <div class="hname">
+  <h2>HOTEL SHEFAF</h2>
+     </div>
+    <div class="haddress">
+         <p>Hazratbal Road, Rainawari </p>
+    <p>Srinagar, India.</p>
+    <p>CALL:+91 183 523 1243</p> 
+    </div>
+    <div class="hsurname">
+    <p> The Art Of Happiness</p>
+    </div>
+    
+    <div class="sideheaded">
+      <p>Feel The Difference</p>
+    
+    </div>
+    <div class="sidewards">
+      <p>Memorable,stylish and powerful;</p>
+      <p>Shefaf creates meaningful</p>
+      <p>experiences in inspiring environments.</p>
+    </div>
+  </div>
+    
+  </div>
+ <!--for book now button-->
+ <div class="booknow">
+  <button type="button"><a href="room.html">Book Now</a></button>
+
+</div>
+<header><!--FOR TOP NAVBAR-->
+   <nav class="navbar">
+        <ul>
+            <li><a href="hotel.html">HOTEL</a></li>
+            <li><a href="room.html">ROOMS</a></li>
+            <li><a href="dining.html">DINING</a></li> 
+            <li><a href="events.html">SPECIAL EVENTS</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+            <li><a href="offers.html">OFFERS</a></li>
+            <li><button><a href="login.html">LOGIN</a></button></li>
+            
+        </ul>
+    </nav>
+ </header>
+ <!--forimage one first image of hotel page-->
+ <div class="fimage">
+  <img id="image" src="ii.png" alt="Image">
+
+ </div>
+<hr>
+<div class="services"><!--for amenities-->
+    <h2 id="head">Amenities</h2><!--for heading-->
+   <div class="amen"><!--for images of amenities. first 4 -->
+     <figure>
+        <img src="s4.jpeg" width="150" height="90">
+        <figcaption>FREE WIFI</figcaption>
+     </figure>
+     <figure>
+           <img src="s3.jpeg" width="150" height="90">
+           <figcaption>FREE PARKING</figcaption>
+    </figure>
+
+    <figure>
+               <img src="s1.jpeg" width="150" height="90">
+               <figcaption>POOL</figcaption>
+    </figure>
+
+    <figure>
+                   <img src="s2.jpeg" width="150" height="90">
+                   <figcaption>ROOM SERVICE</figcaption>
+    </figure>
+    </div>
+  <div class="amen2"><!--for next 4 images--> 
+    <figure>
+        <img src="s7.jpeg" width="150" height="90">
+        <figcaption>FITNESS CENTER</figcaption>
+    </figure>
+    <figure>
+        <img src="s6.jpeg" width="150" height="90">
+        <figcaption>SPA</figcaption>
+    </figure>
+    <figure>
+        <img src="s5.jpeg" width="150" height="90">
+        <figcaption>ON-SITE RESTAURANT</figcaption>
+    </figure>
+    <figure>
+        <img src="s8.jpeg" width="150" height="90">
+        <figcaption>MEETING FACILITIES</figcaption>
+    </figure>
+    </div> 
+</div>
+<hr>
+<div class="att"><!--for attraction images-->
+    <img src="att.png" width="600" height="400">
+    <img src="att2.png" width="600" height="400">
+</div>
+<hr>
+
+<div class="rooms"><!--for roomimages-->
+    <h2>ROOMS</h2>
+    
+<div class="slideshow-container"><!--image slider-->
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="ka3.png" style="width:100%">
+    <div class="text">FAMILY SUITE</div><!--caption for image 1-->
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="ka.png" style="width:100%">
+    <div class="text">EXECUTIVE SUITE</div><!--caption for image 2-->
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="ka2.png" style="width:100%">
+    <div class="text">SUITE</div><!--caption for image 3-->
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  
+</div>
+<hr>
+<div class="kids"><!--for kidzoneimg-->
+  <div class="kids1">
+    <h2>KID-ZONE</h2><!--for heading-->
+    <p>The kids' section at our hotel is a true haven for our little guests. 🎉👧🧒 With its vibrant colors, interactive games, and friendly staff, we've created a space where kids can let their imaginations run wild. From arts and crafts activities to fun games and even a mini playground, there's never a dull moment for our young adventurers. Parents can rest assured knowing that their children are in a safe and engaging environment, allowing them to relax and enjoy their own vacation. So bring the whole family and let the kids create memories that will last a lifetime at our hotel's exciting kids' section! 🌈🎈</p>
+  </div>
+  <div class="kids2">
+    <img src="kids.png" width="500"
+height="400"><!--for image-->
+</div>
+</div>
+<hr>
+<div class="gym"><!--for gym img-->
+  <div class="gym2">
+    
+    <img src="fit.png" width="500"
+height="400"><!--for image-->
+  </div>
+  <div class="gym3">
+    <h2>FITNESS-CENTER</h2><!--for heading-->
+    <p>When it comes to the gym section at our hotel, we've got you covered with state-of-the-art equipment and a fitness space that's designed to help you achieve your fitness goals. 💪🏋️‍♀️ From cardio machines to free weights and everything in between, you'll find everything you need for a great workout. Our gym is spacious, well-maintained, and equipped with modern amenities, making it the perfect place to stay active and energized during your stay. So get ready to break a sweat and enjoy a rewarding workout experience at our hotel's fantastic gym section! 🏋️‍♂️🔥</p>
+  </div>
+</div>
+<hr>
+<div class="pool"><!--for pool img-->
+  
+  <div class="pool1">
+    <h2>POOL</h2><!--for heading-->  
+    <p>When it comes to the pool area at our hotel, it's truly a slice of paradise. 🏊‍♀️🌴 With its sparkling blue waters, comfortable lounge chairs, and lush tropical surroundings, it's the perfect place to relax and soak up the sun. Whether you want to take a refreshing dip in the pool or simply unwind with a good book by the water, our pool area offers a tranquil oasis where you can escape from the hustle and bustle of everyday life. So come on over and dive into a world of relaxation and serenity at our hotel's pool area! 😊🌞</p>
+  </div>
+    <div class="pool2">
+    <img src="pool.png" width="500"
+height="400"><!--for image-->
+    </div>
+</div>
+<hr>
+
+<div class="spa">
+
+  <div class="spa2">
+    <img src="spa.png"  width="500" height="400">
+  </div>
+  <div class="spa1">
+    <h2>SPA</h2>
+    <p> Get ready to indulge in pure relaxation and rejuvenation. 🌺🧖‍♀️ Our spa offers a serene and tranquil atmosphere where you can escape the stresses of everyday life. From soothing massages to invigorating facials and luxurious body treatments, our skilled therapists will pamper you from head to toe. We use only the finest products and techniques to ensure that you leave feeling refreshed, revitalized, and ready to take on the world. So treat yourself to a blissful spa experience at our hotel's exquisite spa section. You deserve it! 💆‍♂️💫</p>
+    </div>
+</div>
+<hr>
+<div class="dining"><!--for dining img-->
+    <h2>DINING</h2>
+    <img src="d1.png" width="600"
+height="400">
+<img src="d2.png" width="600" height="400">
+<img src="bar.png" width="600" height="400">
+<img src="d4.png" width="600" height="400"> 
+</div>
+<hr>
+<div class="specialevents"><!--for special events img-->
+    <h2>SPECIAL EVENTS</h2>
+    <img src="w1.png" width="600" height="400">
+<img src="w2.png" width="600" height="400">
+<img src="w3.png" width="600" height="400">
+<img src="w4.png" width="600" height="400"> 
+</div>
+<hr>
+
+<div class="lastpart">
+<div class="lastpart1"><!--for location a nd map-->
+   
+  <h2>LOCATION</h2>
+   
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.8408627665713!2d74.82015037598609!3d34.099216973139356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18579e062d489%3A0xf5276e60766deb9!2sHotel%20Shefaf-Best%20Hotel%20in%20Kashmir!5e0!3m2!1sen!2sin!4v1713289701731!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+          
+    
+
+ </div>
+<div class="lastpart4">
+  <h2>ADDRESS</h2>
+     <p>Hazratbal Road</p>
+     <p>Rainawari,Srinagar</p> 
+     <p>India, 190003</p>
+     <p>+91 183 523 1243</p>
+     <p>930 REVIEWS</p>
+</div>
+<div class="lastpart2"><!--for contact us heading-->
+  <h2>CONTACT US</h2>
+</div>
+<div class="lastpart3"><!--for icons of social media-->
+  <a href="https://linkedin.com"><img src="linkedin.png" width="30" height="30"></a>
+  <a href="https://instagram.com"><img src="instagram.png" width="30" height="30"></a>
+  <a href="https://web.whatsaap.com"><img src="whatsapp.png" width="30" height="30"></a>
+  <br>
+  <a href="https://twitter.com"><img id="abc"src="twitter.png" width="30" height="30"></a>
+  <a href="https://facebook.com"><img id="cba"src="facebook.png" width="30" height="30"></a>
+</div>
+</div>
+<script>
+  // Array of image URLs
+  var images = ["af.png", "ad.png","ae.png", "ii.png"];
+  var currentIndex = 0;
+  var interval = 2000; // Change image every 5 seconds
+
+  // Function to change image
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.getElementById("image").src = images[currentIndex];
+  }
+
+  // Start the image changing process
+  setInterval(changeImage, interval);
+  
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    
+    
+    
+</script>
+
+</body>
+</html>

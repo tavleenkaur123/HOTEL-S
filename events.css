@@ -1,0 +1,148 @@
+
+    .head1 h2{
+        text-align:center;
+        font-size:30px;
+        font-weight:bold;
+        color:#1e90ff;
+        background-color:#98fb98;
+        padding:50px;
+   
+    }
+    .ser a{
+        text-decoration:none;
+        font-size:20px;
+        
+        color:lightskyblue;
+    }
+    .ser button{  background-color:#0000ff;
+        
+        
+
+
+    }
+    .t{
+        text-align:center;
+    }
+    .img{text-align:center;}
+    .head1 p{
+        text-align:center;
+        font-size:25px;
+    }
+    .img1 figcaption{
+        text-align:center;
+    }
+    .img1{
+        display:flex;
+    
+    }
+    .ser{
+        text-align:center;
+        font-size:20px;
+    }
+    
+    .navbar{
+        background-color:#0bda51;
+        position:relative;
+        bottom:25px;
+        text-align: center;
+        padding:2px;
+    }
+    .navbar li a {
+        text-decoration:none;
+        color:#0000ff;
+        font-size:17px;
+    }
+    .navbar a:hover{
+        color:brown;
+    }
+    .navbar li {
+        display:inline;
+        list-style:none;
+        margin-right:50px;
+        
+    
+    }
+    
+.lastpart a{
+    text-decoration:none;
+    color: #1e90ff;
+    font-size:20px;
+
+}
+.lastpart{
+    
+    position:relative;
+    top:20px;
+    padding: 30px;
+    background-color:#98fb98;
+    display:flex;
+    
+
+
+    
+}
+.lastpart1 h2{
+
+font-size:20px;
+position: relative;
+color: #1e90ff;
+
+
+}
+.lastpart1{
+    position:relative;
+    
+
+}
+#sp{
+    margin-right:20px;
+}
+.lastpart a:hover{
+    color:
+}
+
+
+.lastpart2{
+    position:relative;
+    left:520px;
+    top:10px;
+
+}
+.lastpart3{
+    position:relative;
+    top:70px;
+    left: 393px;
+    
+}
+.lastpart3 a img{
+    margin-right:20px;
+    
+    
+}
+.lastpart4 h2{
+    font-size:20px;
+    color: #1e90ff;
+
+}
+.lastpart4{
+    position:relative;
+    
+    left:300px;
+    top:10px;
+}
+.lastpart4 p{
+    color: #1e90ff;
+}
+#abc{
+    margin-top:10px;
+}
+#cba{
+    margin-top:10px;
+}
+.lastpart2 h2{
+    font-size:20px;
+    color: #1e90ff;
+}
+
+    
+ 
